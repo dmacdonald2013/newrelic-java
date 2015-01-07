@@ -24,7 +24,6 @@ mkdir -p %{buildroot}/opt/newrelic/newrelic-%{version}
 cp -rp newrelic/* %{buildroot}/opt/newrelic/newrelic-%{version}
 cp -rp newrelic/newrelic.yml %{buildroot}/etc/newrelic
 
-pwd
 ln -F -s newrelic-%{version}/newrelic.jar %{buildroot}/opt/newrelic/newrelic.jar
 
 %files
